@@ -88,3 +88,34 @@ case 1937...1973 :
 default :
     print("Mustafa Kemal Ataturk")
 }
+
+//Switch Compound Case:
+var findFootballerswithOneCharecter : String = "e"
+
+switch findFootballerswithOneCharecter {
+case "e" , "f" , "g" :
+    print("It will be Erling Haaland or Federico Cheisa , Gareth Bale")
+case "r" , "m" , "t" :
+    print("It will be Cristiano Ronaldo or Lionel Messi , Taylan Antalyali")
+default:
+    print("null")
+}
+
+//Random number generator
+
+let couplenumbers = Int.random(in: 1..<20)
+
+print(couplenumbers)
+//provisional value in swift
+let randomnum = Int.random(in: 1..<30)
+
+switch randomnum {
+case randomnum where randomnum % 2 == 0:
+    print("The number is double")
+case randomnum where randomnum % 2 == 1:
+    print("Number is single")
+default:
+    print("null")
+}
+
+
